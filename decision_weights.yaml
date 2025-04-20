@@ -1,0 +1,20 @@
+# 复读 vs 直入项目
+study_path:
+  criteria:              # 考量维度
+    - roi                # 投资回报
+    - time_cost          # 时间成本
+    - legal_risk         # 合规/政策风险
+    - emotional_cost     # 情绪/健康消耗
+  weights:               # 0‑1 之间，必须加起来 = 1
+    roi:            0.40
+    time_cost:      0.30
+    legal_risk:     0.20
+    emotional_cost: 0.10
+
+# HY2 单栈 vs HY2+Reality+uTLS
+comm_stack:
+  criteria: [roi, complexity, legal_risk]
+  weights:
+    roi:        0.45
+    complexity: 0.35
+    legal_risk: 0.20
